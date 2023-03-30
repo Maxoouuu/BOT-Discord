@@ -11,6 +11,7 @@ client = discord.Client(intents=intents)
 
 channel_id = os.getenv("CHANNEL_ID") # l'ID du channel sur lequel vous souhaitez que le bot fonctionne
 bot_token = os.getenv("BOT_TOKEN")
+port = int(os.environ.get('PORT', 5000)) # Récupère le port depuis la variable d'environnement PORT ou utilise le port 5000 par défaut
 
 print(f"Channel ID: {channel_id}")
 print(f"Bot Token: {bot_token}")
@@ -31,4 +32,5 @@ async def on_message(message):
             await message.reply(reply_message, mention_author=False)
             await message.edit(suppress=True)
 
-client.run(bot_token)
+# Lance le client Discord sur le port spécifié
+client.run(bot_token, port=port)
