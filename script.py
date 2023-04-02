@@ -11,10 +11,20 @@ client = discord.Client(intents=intents)
 
 channel_id = os.getenv("CHANNEL_ID") # l'ID du channel sur lequel vous souhaitez que le bot fonctionne
 bot_token = os.getenv("BOT_TOKEN")
-port = int(os.environ.get('PORT', 5000)) # Récupère le port depuis la variable d'environnement PORT ou utilise le port 5000 par défaut
 
 print(f"Channel ID: {channel_id}")
 print(f"Bot Token: {bot_token}")
+
+async def handle_tweet(message):
+    twitter_url_pattern = r'https?://(www\.)?twitter\.com/.+?/status/\d+'
+    twitter_url_regex = re.compile(twitter_url_pattern)
+
+    if twitter_url_regex.search(message.content):
+        tweet_url = twitter_url_regex.search(message.content).group(0)
+        fx_tweet_url = tweet_url.replace('https://twitter.com/', 'https://fxtwitter.com/')
+        reply_message = f"@silent Voici le lien FX pour le tweet : {fx_tweet_url}"
+        await message.reply(reply_message, mention_author=False)
+        await message.edit(suppress=True)
 
 @client.event
 async def on_message(message):
@@ -22,15 +32,6 @@ async def on_message(message):
         return
 
     if message.channel.id == int(channel_id): 
-        twitter_url_pattern = r'https?://(www\.)?twitter\.com/.+?/status/\d+'
-        twitter_url_regex = re.compile(twitter_url_pattern)
+        await handle_tweet(message)
 
-        if twitter_url_regex.search(message.content):
-            tweet_url = twitter_url_regex.search(message.content).group(0)
-            fx_tweet_url = tweet_url.replace('https://twitter.com/', 'https://fxtwitter.com/')
-            reply_message = f"@silent Voici le lien FX pour le tweet : {fx_tweet_url}"
-            await message.reply(reply_message, mention_author=False)
-            await message.edit(suppress=True)
-
-# Lance le client Discord sur le port spécifié
-client.run(bot_token, port=port)
+client.run(bot_token)
