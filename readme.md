@@ -50,7 +50,3 @@ Un ensemble d'utilisateur qui envoie simultanement des messages contenant un lie
 
 ## Références
 - [Azure Functions Overview](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
-- [Azure Logic Apps Overview](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-overview)
-
-## Annexes
-
