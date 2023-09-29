@@ -26,7 +26,7 @@ Cette solution utilise Azure Functions pour héberger un bot Discord qui convert
 - Défi 1: Faire en sorte que ça marche
 - Solution 1: ça marche :thumbsup:
 - Défi 2: Le déployer et là, les galères commencent
-- Solution 2:
+- Solution 2: Utiliser le système d'azure pour déployer une Azure Function
 
 ## Évaluation
 ### Efficacité de la Solution
