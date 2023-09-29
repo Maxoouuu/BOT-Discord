@@ -38,7 +38,7 @@ Le bot pourrait :
 
 ## Test de Résilience
 ### Processus de Test
-Un ensemble d'utilisateur qui envoie simultanement des messages contenant un lien vers 
+Un ensemble d'utilisateur qui envoie simultanement des messages contenant un lien twitter/X.
 
 ## Screenshots et Liens Actifs
 ![Capture d'écran](./assets/capture-ecran-discord.png)
