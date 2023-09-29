@@ -41,7 +41,7 @@ Un ensemble d'utilisateur qui envoie simultanement des messages contenant un lie
 
 ## Screenshots et Liens Actifs
 ![Capture d'écran](./assets/capture-ecran-discord.png)
-![Démo du Bot](./assets/bloggif_6516b60fce358.gif)
+![Démo du Bot](./assets/gif-discord-bot.gif)
 
 
 
