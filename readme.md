@@ -15,7 +15,7 @@ Les embeds Twitter/X sur Discord ont longtemps été problématiques, rendant di
 ## Architecture de la Solution
 Cette solution utilise Azure Functions pour héberger un bot Discord qui convertit les liens Twitter/X, Azure Logic Apps pour orchestrer le workflow, et Azure Cosmos DB pour stocker les données nécessaires.
 ### Diagramme d'Architecture
-![Diagramme d'Architecture](./assets/Diagram-Discord-Bot.svg)
+![Diagramme d'Architecture](./assets/discord-bot-diagram.svg)
 
 ## Mise en œuvre
 ### Étapes d'Implémentation
