@@ -13,7 +13,7 @@
 Les embeds Twitter/X sur Discord ont longtemps été problématiques, rendant difficile la visualisation et l'interaction avec les tweets. Ce projet vise à fournir une solution automatisée pour transformer les liens Twitter/X en un format plus utilisable (fxtwitter).
 
 ## Architecture de la Solution
-Cette solution utilise Azure Functions pour héberger un bot Discord qui convertit les liens Twitter/X, Azure Logic Apps pour orchestrer le workflow, et Azure Cosmos DB pour stocker les données nécessaires.
+Cette solution utilise Azure Functions pour héberger un bot Discord qui convertit les liens Twitter/X.
 ### Diagramme d'Architecture
 ![Diagramme d'Architecture](./assets/discord-bot-diagram.svg)
 
@@ -21,8 +21,7 @@ Cette solution utilise Azure Functions pour héberger un bot Discord qui convert
 ### Étapes d'Implémentation
 1. Développement du bot Discord en local.
 2. Déploiement du bot sur Azure Functions.
-3. Configuration d'Azure Logic Apps pour orchestrer le workflow.
-4. Configuration d'Azure Cosmos DB pour le stockage des données.
+
 ### Défis Rencontrés et Solutions
 - Défi 1: Faire en sorte que ça marche
 - Solution 1: ça marche :thumbsup:
