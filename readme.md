@@ -32,7 +32,7 @@ Cette solution utilise Azure Functions pour héberger un bot Discord qui convert
 ### Efficacité de la Solution
 La solution a réussi à transformer les liens Twitter/X automatiquement, améliorant ainsi l'expérience utilisateur sur Discord.
 ### Améliorations Possibles
-Le bot pourrait ne pas se limiter qu'à un seul channel
+Le bot pourrait ne pas se limiter qu'à un seul channel. Faire en sorte que lorsqu'il réponde au message initial il n'envoie pas de notif sur le serveur mais pour l'instant il ne semble pas que ce soit possible de faire ça car les bots ne peuvent pas utiliser la balise @silent en début de message.
 
 ## Test de Résilience
 ### Processus de Test
