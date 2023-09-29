@@ -40,8 +40,8 @@ Le bot pourrait ne pas se limiter qu'à un seul channel
 Un ensemble d'utilisateur qui envoie simultanement des messages contenant un lien vers 
 
 ## Screenshots et Liens Actifs
-![Capture d'écran](./assets/Capture d'écran 2023-09-29 113936.png)
-[Demo en direct](./assets/video-Discord-2023-09-29 11-52-36.mp4)
+![Capture d'écran](./assets/capture-ecran-discord.png)
+![Demo en direct](./assets/video-Discord-2023-09-29.mp4)
 
 
 ## Références
