@@ -41,7 +41,7 @@ Un ensemble d'utilisateur qui envoie simultanement des messages contenant un lie
 
 ## Screenshots et Liens Actifs
 ![Capture d'écran](./assets/capture-ecran-discord.png)
-![Demo en direct](./assets/video-Discord-2023-09-29.mp4)
+![Demo en direct](https://youtu.be/1C_lkvwYPHg)
 
 
 ## Références
